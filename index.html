@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Palace Restaurant</h1>
+    </header>
+
+
+
+    <div class="menu">
+        <div class="item">
+            <img src="images/item1.jpg" alt="Item 1">
+            <div class="item-info">
+                <h2>Spicy Nachos</h2>
+                <span class="price">$10</span>
+                <button onclick="addToCart('Spicy Nachos', 10)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item2.jpg" alt="Item 2">
+            <div class="item-info">
+                <h2>Garlic Butter Shrimp</h2>
+                <span class="price">$15</span>
+                <button onclick="addToCart('Garlic Butter Shrimp', 15)">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Add more items as needed -->
+        <div class="item">
+            <img src="images/item3.jpg" alt="Item 3">
+            <div class="item-info">
+                <h2>Crispy Tofu Bites</h2>
+                <span class="price">$8</span>
+                <button onclick="addToCart('Crispy Tofu Bites', 8)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item4.jpg" alt="Item 4">
+            <div class="item-info">
+                <h2>BBQ Pulled Pork Sandwich</h2>
+                <span class="price">$12</span>
+                <button onclick="addToCart('BBQ Pulled Pork Sandwich', 12)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item5.jpg" alt="Item 5">
+            <div class="item-info">
+                <h2>Caprese Salad</h2>
+                <span class="price">$9</span>
+                <button onclick="addToCart('Caprese Salad', 9)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item6.jpg" alt="Item 6">
+            <div class="item-info">
+                <h2>Mango Tango Smoothie</h2>
+                <span class="price">$7</span>
+                <button onclick="addToCart('Mango Tango Smoothie', 7)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item7.jpg" alt="Item 7">
+            <div class="item-info">
+                <h2>Chicken Alfredo Pasta</h2>
+                <span class="price">$14</span>
+                <button onclick="addToCart('Chicken Alfredo Pasta', 14)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item8.jpg" alt="Item 8">
+            <div class="item-info">
+                <h2>Veggie Supreme Pizza</h2>
+                <span class="price">$16</span>
+                <button onclick="addToCart('Veggie Supreme Pizza', 16)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item9.jpg" alt="Item 9">
+            <div class="item-info">
+                <h2>Chocolate Fudge Cake</h2>
+                <span class="price">$8</span>
+                <button onclick="addToCart('Chocolate Fudge Cake', 8)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item10.jpg" alt="Item 10">
+            <div class="item-info">
+                <h2>Classic Caesar Salad</h2>
+                <span class="price">$11</span>
+                <button onclick="addToCart('Classic Caesar Salad', 11)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item11.jpg" alt="Item 11">
+            <div class="item-info">
+                <h2>Teriyaki Chicken Bowl</h2>
+                <span class="price">$13</span>
+                <button onclick="addToCart('Teriyaki Chicken Bowl', 13)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item12.jpg" alt="Item 12">
+            <div class="item-info">
+                <h2>Spinach and Feta Omelette</h2>
+                <span class="price">$9</span>
+                <button onclick="addToCart('Spinach and Feta Omelette', 9)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item13.jpg" alt="Item 13">
+            <div class="item-info">
+                <h2>Pepperoni Pizza</h2>
+                <span class="price">$14</span>
+                <button onclick="addToCart('Pepperoni Pizza', 14)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item14.jpg" alt="Item 14">
+            <div class="item-info">
+                <h2>Avocado Toast</h2>
+                <span class="price">$10</span>
+                <button onclick="addToCart('Avocado Toast', 10)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item15.jpg" alt="Item 15">
+            <div class="item-info">
+                <h2>Chicken and Broccoli Stir Fry</h2>
+                <span class="price">$12</span>
+                <button onclick="addToCart('Chicken and Broccoli Stir Fry', 12)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item16.jpg" alt="Item 16">
+            <div class="item-info">
+                <h2>Blueberry Pancakes</h2>
+                <span class="price">$8</span>
+                <button onclick="addToCart('Blueberry Pancakes', 8)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item17.jpg" alt="Item 17">
+            <div class="item-info">
+                <h2>Beef and Vegetable Curry</h2>
+                <span class="price">$15</span>
+                <button onclick="addToCart('Beef and Vegetable Curry', 15)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item18.jpg" alt="Item 18">
+            <div class="item-info">
+                <h2>Mushroom and Swiss Burger</h2>
+                <span class="price">$13</span>
+                <button onclick="addToCart('Mushroom and Swiss Burger', 13)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item19.jpg" alt="Item 19">
+            <div class="item-info">
+                <h2>Strawberry Cheesecake</h2>
+                <span class="price">$9</span>
+                <button onclick="addToCart('Strawberry Cheesecake', 9)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/item20.jpg" alt="Item 20">
+            <div class="item-info">
+                <h2>Vegetable Noodle Soup</h2>
+                <span class="price">$7</span>
+                <button onclick="addToCart('Vegetable Noodle Soup', 7)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <div class="container">
+        <div class="menu">
+            <!-- Menu items go here -->
+        </div>
+
+        <div class="cart">
+            <img src="images/cart-icon.png" alt="Cart Icon" class="cart-icon">
+            <ul id="cart-items"></ul>
+            <div class="total">Total: $<span id="total-amount">0</span></div>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.cart-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30px; /* Adjust the width of the icon as needed */
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 70%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.item {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+}
+
+.item img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.item-info {
+  margin-top: 10px;
+}
+
+h2 {
+  margin: 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+}
+
+button {
+  background-color: #00274c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ffcb05;
+}
+
+.cart {
+  background-color: #bfbbbb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+.total {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
