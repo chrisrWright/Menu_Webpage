@@ -1,4 +1,4 @@
-Restaurant Order Web App exmple
+Restaurant Order Web App example
 This simple web application allows users to browse a menu of food items, add them to their cart, and calculate the total cost before checking out.
 
 Features
